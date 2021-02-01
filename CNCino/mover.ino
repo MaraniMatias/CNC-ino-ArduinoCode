@@ -40,14 +40,14 @@ void MoveZ(boolean sent) {
 }
 void StepX(int i) {
   if (_time != 0) {
-    int j = 0;
-    if (i != 3) j = i + 1;
-    else j = 0;
+    // int j = 0;
+    // if (i != 3) j = i + 1;
+    // else j = 0;
     digitalWrite(pinX[i], HIGH);
-    digitalWrite(pinX[j], HIGH);
+    // digitalWrite(pinX[j], HIGH);
     delay(_time);
     digitalWrite(pinX[i], LOW);
-    digitalWrite(pinX[j], LOW);
+    // digitalWrite(pinX[j], LOW);
     if (xyzp[1] == 0) {
       delay(_time);
     }
@@ -57,14 +57,14 @@ void StepX(int i) {
 }
 void StepY(int i) {
   if (_time != 0) {
-    int j = 0;
-    if (i != 3) j = i + 1;
-    else j = 0;
+    // int j = 0;
+    // if (i != 3) j = i + 1;
+    // else j = 0;
     digitalWrite(pinY[i], HIGH);
-    digitalWrite(pinY[j], HIGH);
+    // digitalWrite(pinY[j], HIGH);
     delay(_time);
     digitalWrite(pinY[i], LOW);
-    digitalWrite(pinY[j], LOW);
+    // digitalWrite(pinY[j], LOW);
     if (xyzp[0] == 0) {
       delay(_time);
     }
@@ -74,14 +74,14 @@ void StepY(int i) {
 }
 void StepZ(int i) {
   if (_time != 0) {
-    int j = 0;
-    if (i != 3) j = i + 1;
-    else j = 0;
+    // int j = 0;
+    // if (i != 3) j = i + 1;
+    // else j = 0;
     digitalWrite(pinZ[i], HIGH);
-    digitalWrite(pinZ[j], HIGH);
+    // digitalWrite(pinZ[j], HIGH);
     delay(_time);
     digitalWrite(pinZ[i], LOW);
-    digitalWrite(pinZ[j], LOW);
+    // digitalWrite(pinZ[j], LOW);
     if (xyzp[0] == 0) {
       delay(_time);
     }
